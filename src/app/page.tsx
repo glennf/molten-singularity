@@ -45,13 +45,13 @@ export default function Home() {
           Arctic.
         </div>
         <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-          <a href="#" className="hover:text-cyan-400 transition-colors">Destinations</a>
-          <a href="#" className="hover:text-cyan-400 transition-colors">Cabins</a>
-          <a href="#" className="hover:text-cyan-400 transition-colors">Activities</a>
-          <a href="#" className="hover:text-cyan-400 transition-colors">About</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors">Destinasjoner</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors">Hytter</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors">Aktiviteter</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors">Om oss</a>
         </div>
         <button className="px-5 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500 hover:text-slate-900 transition-all duration-300 font-medium text-sm backdrop-blur-sm">
-          Book Now
+          Bestill nå
         </button>
       </nav>
 
@@ -60,25 +60,25 @@ export default function Home() {
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in zoom-in duration-1000">
           <div className="inline-block animate-pulse">
             <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-semibold tracking-wider uppercase backdrop-blur-md">
-              Winter Season 2025
+              Vintersesong 2025
             </span>
           </div>
 
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-b from-white via-cyan-100 to-blue-400 drop-shadow-2xl">
-            Embrace the <br />
-            <span className="text-cyan-300">Chill</span>
+            Omfavn <br />
+            <span className="text-cyan-300">Kulden</span>
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 leading-relaxed">
-            Discover the serene beauty of the frozen north. From aurora hunting to cozy cabin retreats, experience winter like never before.
+            Oppdag den rolige skjønnheten i det frosne nord. Fra nordlysjakt til koselige hytteopphold, opplev vinteren som aldri før.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <button className="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-lg hover:shadow-[0_0_40px_-10px_rgba(6,182,212,0.5)] transition-all duration-300 transform hover:-translate-y-1">
-              Start Your Journey
+              Start reisen din
             </button>
             <button className="px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-semibold text-lg hover:bg-white/10 backdrop-blur-md transition-all duration-300">
-              View Gallery
+              Se galleri
             </button>
           </div>
         </div>
@@ -91,9 +91,9 @@ export default function Home() {
       <section className="relative z-10 max-w-7xl mx-auto px-4 pb-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { title: 'Aurora Borealis', desc: 'Witness the dancing lights of the north.', gradient: 'from-green-400/20 to-teal-500/20' },
-            { title: 'Ice Hotels', desc: 'Sleep in a sculpture made of pure ice.', gradient: 'from-sky-400/20 to-blue-500/20' },
-            { title: 'Dog Sledding', desc: 'Race through the snowy forests.', gradient: 'from-indigo-400/20 to-purple-500/20' }
+            { title: 'Nordlys', desc: 'Vitne til nordlysets dans.', gradient: 'from-green-400/20 to-teal-500/20' },
+            { title: 'Ishoteller', desc: 'Sov i en skulptur laget av ren is.', gradient: 'from-sky-400/20 to-blue-500/20' },
+            { title: 'Hundekjøring', desc: 'Kjør om kapp gjennom de snødekte skogene.', gradient: 'from-indigo-400/20 to-purple-500/20' }
           ].map((card, idx) => (
             <div key={idx} className="group relative p-8 rounded-3xl border border-white/5 bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-xl hover:bg-white/10 transition-all duration-500 hover:border-white/20">
               <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl`} />
@@ -115,7 +115,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/5 py-12 text-center text-slate-500 text-sm">
-        <p>&copy; 2025 Arctic Experience. All rights reserved.</p>
+        <p>&copy; 2025 Arctic Experience. Alle rettigheter forbeholdt.</p>
       </footer>
     </div>
   );

@@ -5,8 +5,9 @@ import FeaturedCabin from '../FeaturedCabin'
 describe('FeaturedCabin', () => {
     it('renders the main heading', () => {
         render(<FeaturedCabin />)
-        expect(screen.getByText(/Krystall/i)).toBeInTheDocument()
-        expect(screen.getByText(/helligdommen/i)).toBeInTheDocument()
+        const heading = screen.getByRole('heading', { level: 2 })
+        // The heading should contain "Krystallhelligdommen" without a space
+        expect(heading.textContent).toMatch(/Krystallhelligdommen/)
     })
 
     it('renders the cabin of the month badge', () => {

@@ -12,9 +12,7 @@ export default function FeaturedCabin() {
                         <span className="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-semibold tracking-wide uppercase">
                             Månedens hytte
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-                            Krystall <span className="text-cyan-400">helligdommen</span>
-                        </h2>
+                        <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">Krystall<span className="text-cyan-400">helligdommen</span></h2>
                         <p className="text-slate-400 text-lg leading-relaxed">
                             Dypt inne i den boreale skogen, tilbyr dette arkitektoniske mesterverket med glasstak uhindret utsikt over nordlyset fra komforten av din oppvarmede seng. Opplev stillheten i snøen.
                         </p>

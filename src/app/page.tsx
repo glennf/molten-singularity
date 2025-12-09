@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import FeaturedCabin from '@/components/FeaturedCabin';
 
 export default function Home() {
   const [snowflakes, setSnowflakes] = useState<Array<{ id: number; left: string; duration: string; delay: string; size: string }>>([]);
@@ -82,6 +83,9 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      {/* Featured Component */}
+      <FeaturedCabin />
 
       {/* Glassmorphism Cards Section */}
       <section className="relative z-10 max-w-7xl mx-auto px-4 pb-24">

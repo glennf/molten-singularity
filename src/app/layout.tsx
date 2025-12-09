@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Winter Wonderland | Frosty Experience",
-  description: "Experience the magic of winter with our immersive landing page.",
+  title: "Vinterland | Frostopplevelse",
+  description: "Opplev vinterens magi med vår oppslukende landingsside.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="no">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
         {children}
